@@ -1,0 +1,71 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'daisyui/dist/full.css';
+
+@font-face {
+    font-family: Aldrich;
+    font-weight: 400;
+    src: url("../fonts/aldrich/Aldrich-Regular.ttf");
+}
+
+@font-face {
+    font-family: Stardustzone;
+    font-weight: 400;
+    src: url("../fonts/starzone/Starzone.ttf");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* --clr-light: #fdffc4;
+  --clr-dark: #00332a;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark); */
+
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #bcbcbd;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --ff-title: "Stardustzone";
+    --ff-body: "Aldrich";
+}
+
+.darkmode {
+    --clr-light: #fdffc4;
+    --clr-dark: #00332a;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body) !important;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--ff-title);
+}
+
+svg.active:hover {
+    fill: "white";
+}

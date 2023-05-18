@@ -15,6 +15,7 @@ module.exports = {
             light: '#67e8f9',
             DEFAULT: '#06b6d4',
             dark: '#0e7490',
+            accent:"#ccc"
           },
           fontFamily: {
             Aldrich: ['Aldrich'],
@@ -25,13 +26,26 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    styled: true,
-    themes: true,
+    styled: false,
+    themes: false,
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: "",
     darkTheme: "dark",
+    themes: [
+      {
+        mytheme: {
+          primary: "#a991f7",
+          secondary: "#ff7750",
+          accent: "#ff7750",
+          neutral: "#3d4451",
+          "base-100": "#ffffff",
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
   },
 }

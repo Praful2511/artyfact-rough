@@ -18,7 +18,7 @@ const MarketplaceSideBar = (second) => {
                     Faq
                 </div>
             </div>
-            <div class=" col-span-2 pt-10">
+            <div class="col-span-2 pt-10 rounded-l-lg border-[2px] border-[#161617]">
                 <div>Search</div>
                 <div>
                     <ul>

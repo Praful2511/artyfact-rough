@@ -1,5 +1,11 @@
+import ButtonPrimary from "./buttons/buttonPrimary/ButtonPrimary";
+
 const AvatarDropdown = () => {
-    return <button className="btn btn-primary">Login</button>
+    return <ButtonPrimary
+        className={'primaryBg'}
+    >
+        LOGIN
+    </ButtonPrimary>
 }
 
 export default AvatarDropdown;

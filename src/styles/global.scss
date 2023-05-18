@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: var(--ff-title);
 }
 .container {
-    height: calc(100vh - 64px);
+    min-height: calc(100vh - 64px);
 }
 
 svg.active:hover {
@@ -75,4 +75,15 @@ svg.active:hover {
 
 .primaryBg {
 	background: linear-gradient(114.31deg, #ff7246 0.05%, #f8a932 89.74%);
+}
+
+.avatarCardBg {
+	background-image: url("../images/backgrounds/AvatarCard.png");
+	background-repeat: no-repeat;
+	width: 266px;
+	height: 403px;
+}
+.avatarCardBg:hover {
+	background-image: url("../images/backgrounds/cardshover.png");
+	background-repeat: no-repeat;
 }

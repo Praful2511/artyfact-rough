@@ -65,6 +65,9 @@ body {
 h1,h2,h3,h4,h5,h6{
     font-family: var(--ff-title);
 }
+nav{
+    @apply px-4 sm:px-6 lg:px-8;
+}
 .container {
     min-height: calc(100vh - 64px);
 }

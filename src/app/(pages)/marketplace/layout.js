@@ -6,7 +6,7 @@ export const metadata = {
 }
 const MarketplaceLayout = ({ children }) => {
   return (<>
-    <div className="flex flex-col h-[90vh]">
+    <div className="container flex flex-col">
       <div className='flex'>
         <div className="mr-3"><Link href="/marketplace/browse/avatar">Browse</Link></div>
         <div className="mr-3"><Link href="/marketplace/my-items">items</Link></div>

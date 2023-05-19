@@ -30,9 +30,8 @@ const AvatarDropdown = () => {
 
   return (
     <div>
-      {/* <ButtonPrimary className={"primaryBg"}>LOGIN</ButtonPrimary>) */}
       {loggedIn ? (
-        <div className="relative">
+        <div className="relative" style={{zIndex:"1"}}>
           <div
             className="flex items-center gap-2 text-xs cursor-pointer"
             onClick={() => {

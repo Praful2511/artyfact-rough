@@ -90,3 +90,26 @@ svg.active:hover {
 	background-image: url("../images/backgrounds/cardshover.png");
 	background-repeat: no-repeat;
 }
+.bgMonthPass{
+    background-image: url('../images/backgrounds/bgmonth.png');
+   background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bgMonthPassSmall{
+    background-image: url('../images/backgrounds/bgmonthsmall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bgMonthPasstwo{
+    background-image: url('../images/backgrounds/bgmonthtwo.png');
+   background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bgMonthPassSmalltwo{
+    background-image: url('../images/backgrounds/bgmonthsamlltwo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .buttonbggradian{
+    background: linear-gradient(114.31deg, #FF7246 0.05%, #F8A932 89.74%);
+  }

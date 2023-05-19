@@ -1,3 +1,11 @@
+import Entrypass from "./entrypass";
+
+
 export default function EntryPassPage() {
-    return <h1 className="">EntryPassPage</h1>
+    return (
+        <div className="bg-black my-5 ">
+          <Entrypass/>
+        </div>
+   
+    )
 }

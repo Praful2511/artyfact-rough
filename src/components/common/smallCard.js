@@ -23,7 +23,7 @@ const SmallCard = ({ data }) => {
 							<p className="text-xl">
 								{data?.value}
 							</p>
-							<p className="text-xs text-[#BCBCBD]">$ARTY</p>
+							<p className="text-xs Starzone text-[#BCBCBD]">$ARTY</p>
 							<Image src={logo_small} width="18px" height="15px" alt="logo" />
 						</div>
 						<p className="text-xs text-[#BCBCBD]">${data?.price}</p>

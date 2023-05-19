@@ -4,17 +4,21 @@
 @import "daisyui/dist/full.css";
 
 @font-face {
-	font-family: Aldrich;
+	font-family: "Aldrich";
 	font-weight: 400;
 	src: url("../fonts/aldrich/Aldrich-Regular.ttf");
 }
 
 @font-face {
-	font-family: Stardustzone;
+	font-family: "Stardustzone";
 	font-weight: 400;
 	src: url("../fonts/starzone/Starzone.ttf");
 }
 
+.Starzone {
+  font-family: "Stardustzone";
+  
+}
 *,
 *::before,
 *::after {

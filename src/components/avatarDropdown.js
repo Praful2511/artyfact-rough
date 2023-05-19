@@ -26,22 +26,7 @@ const AvatarDropdown = () => {
     }, 2000);
   };
 
-  useEffect(() => {
-    const checkIfClickedOutside = (e) => {
-      // If the menu is open and the clicked target is not within the menu,
-      // then close the menu
-      if (social && ref.current && !ref.current.contains(e.target)) {
-        setSocial(false);
-      }
-    };
 
-    document.addEventListener("mousedown", checkIfClickedOutside);
-
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
-  }, [social, isOpen]);
 
   return (
     <div>
@@ -76,12 +61,12 @@ const AvatarDropdown = () => {
                   onClick={logout}
                   loading={loading}
                   className={
-                    "logoutBg pt-0 pb-0 gap-0 w-full pl-0 pr-10 !rounded-none"
+                    "logoutBg pt-0 pb-0 gap-0 w-full pl-0 pr-4 !rounded-none"
                   }
                 >
                   <Image
                     src={logoutimg}
-                    className="w-[50px] h-[50px]"
+                    className="w-[50px] h-[50px] !inline"
                     alt="logout"
                   />
                   {/* <GrPowerShutdown className=' w-5 h-5' /> */}

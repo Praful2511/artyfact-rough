@@ -129,3 +129,57 @@ svg.active:hover {
 	background-image: url("../images/backgrounds/smallcardhover.png");
 	background-repeat: no-repeat;
 }
+.loggedBg {
+    background-image: url('../images/backgrounds/loggedBg.png');
+    backdrop-filter: blur(6.5px);
+    width: 215px;
+    background-repeat: no-repeat;
+    height: 140px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    /* margin-top: 30px;
+    transition: 'margin-top 1s'; */
+  }
+  .rightUpperLogged {
+    background-image: url('../images/backgrounds/rightUpper.png');
+    position: relative;
+    width: 47px;
+    height: 49px;
+    top: -16px;
+    left: 137px;
+    background-repeat: no-repeat;
+  }
+  
+  .leftUpperLogged {
+    background-image: url('../images/backgrounds/leftUpper.png');
+    position: relative;
+    width: 47px;
+    height: 49px;
+    top: -16px;
+    left: -16px;
+    background-repeat: no-repeat;
+  }
+  
+  .rightBottomLogged {
+    background-image: url('../images/backgrounds/rightBottom.png');
+    position: relative;
+    width: 47px;
+    height: 49px;
+    top: -31px;
+    left: 137px;
+    background-repeat: no-repeat;
+  }
+  
+  .leftBottomLogged {
+    background-image: url('../images/backgrounds/leftBottom.png');
+    position: relative;
+    width: 47px;
+    height: 49px;
+    top: -31px;
+    left: -16px;
+    background-repeat: no-repeat;
+  }
+  .logoutBg {
+    background: linear-gradient(92.93deg, #931212 0.4%, #DC3C3C 91.28%);
+  }

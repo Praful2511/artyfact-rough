@@ -31,7 +31,7 @@ const Entrypass = () => {
             )
         })
       }  */}
-      <div className="flex gap-7 lg:gap-2 2xl:gap-3  flex-wrap ">
+      <div className="flex gap-9 lg:gap-2 2xl:gap-3  flex-wrap ">
         <div
           className={`w-[320px]  xl:w-[320px] 2xl:w-[320px] h-[286px] bgMonthPassSmall`}
         >
@@ -40,7 +40,7 @@ const Entrypass = () => {
           </div>
         </div>
         <div
-          className={`w-full lg:w-[784px] h-[285px]  mb-7 lg:mb-0 bgMonthPass `}
+          className={`w-full lg:w-[786px] h-[285px]  mb-7 lg:mb-0 bgMonthPass `}
         >
           <div className=" mt-3">
             <div className="px-9 pt-7">
@@ -90,7 +90,7 @@ const Entrypass = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-7 lg:gap-2 2xl:gap-3  flex-wrap ">
+      <div className="flex gap-9 lg:gap-2 2xl:gap-3  flex-wrap ">
         <div
           className={`w-[320px]  xl:w-[320px] 2xl:w-[320px] h-[286px] bgMonthPassSmalltwo`}
         >
@@ -99,7 +99,7 @@ const Entrypass = () => {
           </div>
         </div>
         <div
-          className={`w-full lg:w-[784px] h-[285px]  mb-7 lg:mb-0 bgMonthPasstwo `}
+          className={`w-full lg:w-[786px] h-[285px]  mb-7 lg:mb-0 bgMonthPasstwo `}
         >
           <div className=" mt-3">
             <div className="px-9 pt-7">

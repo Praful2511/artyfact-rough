@@ -83,7 +83,7 @@ const AvatarDropdown = () => {
           )}
         </div>
       ) : (
-        <Link href={"/"}>
+        <Link href={"/signup"}>
           <div
             className="signupBg cursor-pointer"
             onClick={() => {

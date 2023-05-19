@@ -5,6 +5,7 @@ import TonyWalker from "../images/TonyWalker.png";
 import Link from "next/link";
 import Image from "next/image";
 import InvertBtn from "./buttons/invertButton/InvertBtn";
+import InvertButton from "./buttons/invertButton/InvertButton";
 
 const AvatarDropdown = () => {
   const ref = useRef();
@@ -103,7 +104,7 @@ const AvatarDropdown = () => {
               setLoggedIn(true);
             }}
           >
-            <InvertBtn className="!border"><span className="!text-white"> SIGNUP</span></InvertBtn>
+            <InvertButton className="!border"><span className="!text-white"> SIGNUP</span></InvertButton>
           </div>
         </Link>
       )}

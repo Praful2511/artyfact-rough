@@ -1,28 +1,28 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'daisyui/dist/full.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "daisyui/dist/full.css";
 
 @font-face {
-    font-family: Aldrich;
-    font-weight: 400;
-    src: url("../fonts/aldrich/Aldrich-Regular.ttf");
+	font-family: Aldrich;
+	font-weight: 400;
+	src: url("../fonts/aldrich/Aldrich-Regular.ttf");
 }
 
 @font-face {
-    font-family: Stardustzone;
-    font-weight: 400;
-    src: url("../fonts/starzone/Starzone.ttf");
+	font-family: Stardustzone;
+	font-weight: 400;
+	src: url("../fonts/starzone/Starzone.ttf");
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-    /* --clr-light: #fdffc4;
+	/* --clr-light: #fdffc4;
   --clr-dark: #00332a;
   --clr-primary: #202302;
   --clr-secondary: #00100d;
@@ -31,49 +31,54 @@
   --foreground: var(--clr-light);
   --background: var(--clr-dark); */
 
-    --clr-light: #fff;
-    --clr-dark: #000;
-    --clr-primary: #202302;
-    --clr-secondary: #00100d;
-    --clr-accent: #ff7750;
+	--clr-light: #fff;
+	--clr-dark: #000;
+	--clr-primary: #202302;
+	--clr-secondary: #00100d;
+	--clr-accent: #ff7750;
 
-    --foreground: var(--clr-light);
-    --background: var(--clr-dark);
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
 
-    --ff-title: "Stardustzone";
-    --ff-body: "Aldrich";
+	--ff-title: "Stardustzone";
+	--ff-body: "Aldrich";
 }
 
 .darkmode {
-    --clr-light: #fdffc4;
-    --clr-dark: #00332a;
-    --clr-primary: #202302;
-    --clr-secondary: #00100d;
-    --clr-accent: #ff7750;
+	--clr-light: #fdffc4;
+	--clr-dark: #00332a;
+	--clr-primary: #202302;
+	--clr-secondary: #00100d;
+	--clr-accent: #ff7750;
 
-    --foreground: var(--clr-light);
-    --background: var(--clr-dark);
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
 }
 
 body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: var(--ff-body) !important;
-    font-size: 16px;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--ff-body) !important;
+	font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: var(--ff-title);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--ff-title);
 }
-nav{
-    @apply px-4 sm:px-6 lg:px-8;
+nav {
+	@apply px-4 sm:px-6 lg:px-8;
 }
 .container {
-    min-height: calc(100vh - 64px);
+	min-height: calc(100vh - 64px);
 }
 
 svg.active:hover {
-    fill: "white";
+	fill: "white";
 }
 
 .primaryBg {
@@ -90,26 +95,37 @@ svg.active:hover {
 	background-image: url("../images/backgrounds/cardshover.png");
 	background-repeat: no-repeat;
 }
-.bgMonthPass{
-    background-image: url('../images/backgrounds/bgmonth.png');
-   background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .bgMonthPassSmall{
-    background-image: url('../images/backgrounds/bgmonthsmall.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .bgMonthPasstwo{
-    background-image: url('../images/backgrounds/bgmonthtwo.png');
-   background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .bgMonthPassSmalltwo{
-    background-image: url('../images/backgrounds/bgmonthsamlltwo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .buttonbggradian{
-    background: linear-gradient(114.31deg, #FF7246 0.05%, #F8A932 89.74%);
-  }
+.bgMonthPass {
+	background-image: url("../images/backgrounds/bgmonth.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bgMonthPassSmall {
+	background-image: url("../images/backgrounds/bgmonthsmall.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bgMonthPasstwo {
+	background-image: url("../images/backgrounds/bgmonthtwo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bgMonthPassSmalltwo {
+	background-image: url("../images/backgrounds/bgmonthsamlltwo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.buttonbggradian {
+	background: linear-gradient(114.31deg, #ff7246 0.05%, #f8a932 89.74%);
+}
+.smallCard {
+	background-image: url("../images/backgrounds/smallCard.png");
+	background-repeat: no-repeat;
+	width: 269px;
+	height: 295px;
+}
+
+.smallCard:hover {
+	background-image: url("../images/backgrounds/smallcardhover.png");
+	background-repeat: no-repeat;
+}

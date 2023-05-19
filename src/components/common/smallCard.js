@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import logo_small from "@/images/logo_small.png";
 
-const AvatarCard = ({ data }) => {
+const SmallCard = ({ data }) => {
 	return (
-		<div className="avatarCardBg text-white flex flex-col gap-1 p-4 ">
-			<div className="flex h-[270px] items-center justify-center">
+		<div className="smallCard text-white flex flex-col gap-1 p-4 ">
+			<div className="flex h-[160px] items-center justify-center">
 				<Image className="h-max" src={data?.img} alt="avatar" />
 			</div>
 
@@ -32,6 +32,6 @@ const AvatarCard = ({ data }) => {
 			</div>
 		</div>
 	);
-};
+}
 
-export default AvatarCard;
+export default SmallCard;

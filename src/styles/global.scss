@@ -187,7 +187,9 @@ svg.active:hover {
     background-repeat: no-repeat;
   }
   .logoutBg {
-    background: linear-gradient(92.93deg, #931212 0.4%, #DC3C3C 91.28%);
+    background: linear-gradient(92.93deg, #931212 0.4%, #DC3C3C 91.28%) !important;
+    border-radius: 13px !important;
+    z-index: 1 !important;
   }
 /* signup */
 .rotateLogo {

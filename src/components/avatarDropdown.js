@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import profile from "../images/icon/profile.png";
-import logoutimg from "../images/icon/logout.png";
+import logoutimg from "../images/icon/logout1.png";
 import TonyWalker from "../images/TonyWalker.png";
 import Link from "next/link";
 import Image from "next/image";

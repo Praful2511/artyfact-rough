@@ -5,6 +5,7 @@ import anyone from "../../../images/avatars/anyone.png";
 import Image from "next/image";
 /* import Entrypassformet from "pages/shared/entrypassformet";  */
 import logo from "../../../images/logo_small.png";
+import InvertButton from "@/components/buttons/invertButton/InvertButton";
 
 const Entrypass = () => {
   let data = [
@@ -73,9 +74,12 @@ const Entrypass = () => {
                 </div>
               </div>
               <div>
-                <button className="border border-[#F8A932] rounded-xl lg:w-[188px] h-[41px] text-center px-3">
+                {/*  <button className="border border-[#F8A932] rounded-xl lg:w-[188px] h-[41px] text-center px-3">
                   GET A PASS
-                </button>
+                </button> */}
+                <InvertButton className={"!lg:w-[188px]"}>
+                  GET A PASS
+                </InvertButton>
               </div>
             </div>
           </div>
@@ -124,9 +128,9 @@ const Entrypass = () => {
                 </div>
               </div>
               <div>
-                <button className="border border-[#F8A932] rounded-xl lg:w-[188px] h-[41px] text-center px-3">
+                <InvertButton className={"!lg:w-[188px]"}>
                   GET A PASS
-                </button>
+                </InvertButton>
               </div>
             </div>
           </div>

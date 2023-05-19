@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import InvertBtn from "./buttons/invertButton/InvertBtn";
 import InvertButton from "./buttons/invertButton/InvertButton";
+import ButtonPrimary from "./buttons/buttonPrimary/ButtonPrimary";
 
 const AvatarDropdown = () => {
   const ref = useRef();
@@ -71,7 +72,7 @@ const AvatarDropdown = () => {
                   />
                   <span>View Profile</span>
                 </div>
-                <InvertBtn
+                <ButtonPrimary
                   onClick={logout}
                   loading={loading}
                   className={
@@ -85,7 +86,7 @@ const AvatarDropdown = () => {
                   />
                   {/* <GrPowerShutdown className=' w-5 h-5' /> */}
                   LOGOUT
-                </InvertBtn>
+                </ButtonPrimary>
               </div>
               <div className="flex h-[1px]">
                 <div className="leftBottomLogged"></div>
@@ -104,7 +105,7 @@ const AvatarDropdown = () => {
               setLoggedIn(true);
             }}
           >
-            <InvertButton className="!border"><span className="!text-white"> SIGNUP</span></InvertButton>
+            <ButtonPrimary className="!border"><span className="!text-white"> SIGNUP</span></ButtonPrimary>
           </div>
         </Link>
       )}

@@ -6,12 +6,14 @@
 @font-face {
 	font-family: "Aldrich";
 	font-weight: 400;
+	font-size: 13px;
 	src: url("../fonts/aldrich/Aldrich-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Stardustzone";
 	font-weight: 400;
+	font-size: 13px;
 	src: url("../fonts/starzone/Starzone.ttf");
 }
 
@@ -134,15 +136,15 @@ svg.active:hover {
 	background-repeat: no-repeat;
 }
 .loggedBg {
-    background-image: url('../images/backgrounds/loggedBg.png');
-    backdrop-filter: blur(6.5px);
-    width: 215px;
-    background-repeat: no-repeat;
-    height: 140px;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    /* margin-top: 30px;
+	background-image: url("../images/backgrounds/loggedBg.png");
+	backdrop-filter: blur(6.5px);
+	width: 215px;
+	background-repeat: no-repeat;
+	height: 140px;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	/* margin-top: 30px;
     transition: 'margin-top 1s'; */
   }
   .rightUpperLogged {
@@ -384,4 +386,13 @@ svg.active:hover {
    .loginBg {
     background-image: url("../images/backgrounds/login\ card.png");
     background-repeat: no-repeat;
-  }
+    }
+    .navBorder {
+	background: #161617;
+}
+.navBorder:hover {
+	background: linear-gradient(to right, #ff7246, #f8a932);
+}
+.navBorderActive {
+	background: linear-gradient(to right, #ff7246, #f8a932);
+}

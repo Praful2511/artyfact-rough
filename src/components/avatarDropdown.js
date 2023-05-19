@@ -89,7 +89,9 @@ const AvatarDropdown = () => {
               setLoggedIn(true);
             }}
           >
-            <ButtonPrimary className={'primaryBg'}><span className="!text-white"> SIGNUP</span></ButtonPrimary>
+            <ButtonPrimary className="primaryBg">
+              <span className="!text-white">Sign Up</span>
+            </ButtonPrimary>
           </div>
         </Link>
       )}

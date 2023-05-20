@@ -12,11 +12,19 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonPrimary from "@/components/buttons/buttonPrimary/ButtonPrimary";
 import InvertButton from "@/components/buttons/invertButton/InvertButton";
+import FloatingLabelInput from "@/components/common/floatingLabelInput";
 
 const page = () => {
 	const [agree, setAgree] = useState(false);
 	const [hoverBack, setHoverBack] = useState('#BCBCBD');
 	const [hoveredBtn, setHoveredBtn] = useState("")
+	const [email, setEmail] = useState("")
+	const [pswd, setPswd] = useState("")
+	const [emailerr, setEmailerr] = useState("");
+	const [pswderr, setPswderr] = useState("");
+
+	let regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	let regPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
 	return (
 		<div className="loginBgImage ">
@@ -68,24 +76,36 @@ const page = () => {
 						<p className="text-lg text-[#8B8B8B]">
 							Fill your information to continue with Artyfact
 						</p>
-						<div className="inputDiv mt-8">
-							<input
-								type="text"
-								className="text-white text-sm focus:outline-0 placeholder:text-white placeholder:text-base px-5 w-full h-6 bg-transparent"
-								required
-							/>
-							<div className="inputBg"></div>
-							<span className=" labelFloat text-xs ">Email</span>
-						</div>
-						<div className="inputDiv mt-8">
-							<input
-								type="password"
-								className="text-white text-sm focus:outline-0 placeholder:text-white placeholder:text-base px-5 w-full h-6 bg-transparent"
-								required
-							/>
-							<div className="inputBg"></div>
-							<span className=" labelFloat text-xs ">Enter Password</span>
-						</div>
+						<FloatingLabelInput
+							error={emailerr.length > 0 ? true : false}
+							onChange={(e) => {
+								if (regEmail.test(e.target.value) == false) {
+									setEmailerr("*Invalid Email address");
+								} else {
+									setEmailerr("");
+								}
+								setEmail(e.target.value);
+							}}
+							value={email}
+							id={"email"}
+							label="Email"
+							type="email"
+						/>
+						<FloatingLabelInput
+							error={pswderr.length > 0 ? true : false}
+							onChange={(e) => {
+								if (regPassword.test(e.target.value) == false) {
+									setPswderr("*Invalid Password");
+								} else {
+									setPswderr("");
+								}
+								setPswd(e.target.value);
+							}}
+							value={pswd}
+							id={"pswd"}
+							label="Enter Password"
+							type="password"
+						/>
 
 						<div className="flex gap-4 items-start mt-8">
 							<div className="flex justify-between w-full">

@@ -107,6 +107,7 @@ export default function AvatarPage() {
       value: 25,
     },
   ];
+  
   return (
     <main>
    {/*    <div>

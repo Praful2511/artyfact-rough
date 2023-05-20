@@ -35,14 +35,6 @@ const Navbar = () => {
     };
     const [path, setPath] = useState((window.location.pathname).replace('/',''));
 
-    useEffect(()=>{
-        if(path != ''){
-            for(let i=0; i<nav.length; i++){
-                if(nav[i].link.includes(path)) console.log("active ::", nav[i].link);
-            }
-        }
-    },[path])
-
     return (
         <nav className="">
             <div className="w-full">

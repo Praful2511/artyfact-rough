@@ -28,7 +28,7 @@ const page = () => {
 					>
 						<ButtonPrimary
 							onClick={() => { window.location.replace('/') }}
-							className={' h-6 signupBack pl-0 pr-0 rounded-none border-0'}
+							className={' h-6  pl-0 pr-0 rounded-none border-0'}
 							onMouseEnter={() => { setHoverBack('#ff7246') }}
 							onMouseLeave={() => { setHoverBack('#BCBCBD') }}
 						>
@@ -53,7 +53,7 @@ const page = () => {
 					style={{ zIndex: 1 }}
 				>
 					<div className="Starzone flex h-14 items-center ml-[136px] gap-[25px] ">
-						<div className="navBorderActive rounded-2xl p-[2px]">
+						<div className="primaryBg rounded-2xl p-[2px]">
 							<div className="!text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
 								SIGN UP
 							</div>

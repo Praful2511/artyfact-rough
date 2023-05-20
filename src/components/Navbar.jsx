@@ -33,7 +33,15 @@ const Navbar = () => {
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
-    const [path, setPath] = useState((window.location.pathname).replace('/',''));
+    const [path, setPath] = useState((window.location.pathname).replace('/', ''));
+
+    useEffect(() => {
+        if (path != '') {
+            for (let i = 0; i < nav.length; i++) {
+                if (nav[i].link.includes(path)) console.log("active ::", nav[i].link);
+            }
+        }
+    }, [path])
 
     return (
         <nav className="">
@@ -43,25 +51,25 @@ const Navbar = () => {
                         <Link href="/">
                             <div className="flex-shrink-0 flex items-center gap-1">
                                 <Image src={logo_small2} alt="logo_small2" />
-                                <p className="text-white font-normal Starzone text-sm">ARTYFACT</p>
+                                <p className="text-white font-normal  text-sm">ARTYFACT</p>
                             </div>
                         </Link>
-                        <div className="hidden md:block Starzone">
+                        <div className="hidden md:block ">
                             <div className="flex items-baseline gap-3">
                                 {nav.length ? nav.map((item, index) =>
                                     <Link key={index}
                                         href={item?.link}
-                                        onClick={()=>{
-                                            setPath((item?.link).replace("/",''))
+                                        onClick={() => {
+                                            setPath((item?.link).replace("/", ''))
                                         }}
-                                        className={`${path!="" && item?.link.includes(path) ? 'navBorderActive' : 'navBorder'}
+                                        className={`${path != "" && item?.link.includes(path) ? 'primaryBg' : 'navBorder'}
                                             rounded-2xl p-[2px]`}
                                     >
-                                        <div className={`${path!="" && item?.link.includes(path) ? 'text-white':'text-[#8B8B8B]'} 
+                                        <div className={`${path != "" && item?.link.includes(path) ? 'text-white' : 'text-[#8B8B8B]'} 
                                             text-sm bg-[#0b0c0c] hover:text-white rounded-2xl py-2 px-4`}
                                         >
                                             {item?.name}
-                                            </div>
+                                        </div>
                                     </Link>)
                                     : ""}
                             </div>
@@ -95,7 +103,7 @@ const Navbar = () => {
                 </div>
             </div>
             {isMobileMenuOpen && (
-                <div className="md:hidden Starzone">
+                <div className="md:hidden ">
                     <div className="px-2 pt-2 pb-3 sm:px-3 flex flex-col">
                         <a href="/marketplace" className="text-[#8B8B8B] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-normal">marketplace</a>
                         <a href="#" className="text-[#8B8B8B] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-normal">Leader board</a>

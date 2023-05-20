@@ -29,9 +29,9 @@ const AvatarDropdown = () => {
 
 
   return (
-    <div>
+    <>
       {loggedIn ? (
-        <div className="relative" style={{zIndex:"1"}}>
+        <div className="relative" style={{ zIndex: "1" }}>
           <div
             className="flex items-center gap-2 text-xs cursor-pointer"
             onClick={() => {
@@ -42,10 +42,10 @@ const AvatarDropdown = () => {
             <Image src={TonyWalker} alt="TonyWalker" />
           </div>
           {isOpen ? (
-            <div className="loggedBg  Aldrich">
+            <div className="">
               <div className="flex h-[1px]">
-                <div className="leftUpperLogged"></div>
-                <div className="rightUpperLogged"></div>
+                <div className=""></div>
+                <div className=""></div>
               </div>
               <div className="py-4 px-3">
                 <div className="flex gap-2 items-center">
@@ -73,8 +73,8 @@ const AvatarDropdown = () => {
                 </ButtonPrimary>
               </div>
               <div className="flex h-[1px]">
-                <div className="leftBottomLogged"></div>
-                <div className="rightBottomLogged"></div>
+                <div className=""></div>
+                <div className=""></div>
               </div>
             </div>
           ) : (
@@ -82,20 +82,15 @@ const AvatarDropdown = () => {
           )}
         </div>
       ) : (
-        <Link href={"/signup"}>
-          <div
-            className="signupBg cursor-pointer"
-            onClick={() => {
-              setLoggedIn(true);
-            }}
-          >
-            <ButtonPrimary className="primaryBg">
-              <span className="!text-white">Sign Up</span>
-            </ButtonPrimary>
-          </div>
-        </Link>
+        <div>
+          <Link className="signupBtn" onClick={() => {
+            setLoggedIn(true);
+          }} href={"/signup"}>
+            <span className="dark:text-white">Sign Up</span>
+          </Link>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

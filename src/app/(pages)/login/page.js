@@ -51,14 +51,14 @@ const page = () => {
 				<div className="mt-6 lg:mr-7"
 					style={{ zIndex: 1 }}
 				>
-					<div className="Starzone flex h-14 items-center ml-[136px] gap-[25px] ">
+					<div className=" flex h-14 items-center ml-[136px] gap-[25px] ">
 						<Link href={"/signup"}>
 							<div className=" text-[#8B8B8B] !text-base launchSelectTabTwo px-4 py-2">
 								SIGN UP
 							</div>
 						</Link>
 
-						<div className="navBorderActive rounded-2xl p-[2px]">
+						<div className="primaryBg rounded-2xl p-[2px]">
 							<div className="!text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
 								LOG IN
 							</div>
@@ -111,7 +111,7 @@ const page = () => {
 							</div>
 						</div>
 						{/*  <Link href={`/`}> */}
-						<ButtonPrimary className={'primaryBg Starzone mt-8 font-normal text-base py-1 w-full'}>
+						<ButtonPrimary className={'primaryBg  mt-8 font-normal text-base py-1 w-full'}>
 							LOG IN
 						</ButtonPrimary>
 						{/* </Link> */}

@@ -17,7 +17,7 @@ const MarketplaceSideBar = (props) => {
     },[])
     
     return (
-        <div class="flex justify-between">
+        <div class="flex justify-between h-full">
             <div className="flex flex-col justify-between items-center h-full w-[50px]">
                 <div className="pt-10">
                 {/* #272728 #F8A932 */}

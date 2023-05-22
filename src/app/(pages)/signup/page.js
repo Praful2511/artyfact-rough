@@ -39,7 +39,7 @@ const page = () => {
 					>
 						<ButtonPrimary
 							onClick={() => { window.location.replace('/') }}
-							className={' h-6  pl-0 pr-0 rounded-none border-0'}
+							className={' h-6  pl-0 pr-0 rounded-none !bg-transparent border-0'}
 							onMouseEnter={() => { setHoverBack('#ff7246') }}
 							onMouseLeave={() => { setHoverBack('#BCBCBD') }}
 						>

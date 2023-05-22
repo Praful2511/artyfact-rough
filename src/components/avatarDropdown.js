@@ -7,9 +7,11 @@ import Image from "next/image";
 import InvertBtn from "./buttons/invertButton/InvertBtn";
 import InvertButton from "./buttons/invertButton/InvertButton";
 import ButtonPrimary from "./buttons/buttonPrimary/ButtonPrimary";
+import { useRouter } from 'next/navigation';
 
 const AvatarDropdown = () => {
   const ref = useRef();
+	const router = useRouter();
 
   const [activeTab, setActiveTab] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -18,10 +20,12 @@ const AvatarDropdown = () => {
 
   const logout = () => {
     setLoading(true);
+    localStorage.setItem("auth",false)
     setTimeout(() => {
+      router.replace('/login')
       setLoading(false);
       setLoggedIn(false);
-    }, 2000);
+    }, 1000);
   };
 
   useEffect(() => {

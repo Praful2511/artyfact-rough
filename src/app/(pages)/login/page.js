@@ -10,7 +10,7 @@ import Link from "next/link";
 import ButtonPrimary from "@/components/buttons/buttonPrimary/ButtonPrimary";
 import InvertButton from "@/components/buttons/invertButton/InvertButton";
 import FloatingLabelInput from "@/components/common/floatingLabelInput";
-
+import { useRouter } from 'next/navigation';
 const page = () => {
 	const [agree, setAgree] = useState(false);
 	const [hoverBack, setHoverBack] = useState('#BCBCBD');
@@ -19,7 +19,7 @@ const page = () => {
 	const [pswd, setPswd] = useState("")
 	const [emailerr, setEmailerr] = useState("");
 	const [pswderr, setPswderr] = useState("");
-
+	const router = useRouter();
 	let regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	let regPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
@@ -129,7 +129,10 @@ const page = () => {
 							<p className="text-[#F3BA2F]">Forgot Password?</p>
 						</div>
 						{/*  <Link href={`/`}> */}
-						<ButtonPrimary className={'primaryBg  mt-8 font-normal text-base py-1 w-full'}>
+						<ButtonPrimary onClick={()=>{
+							localStorage.setItem("auth",true)
+							router.replace('/marketplace/browse')
+							}} className={'primaryBg  mt-8 font-normal text-base py-1 w-full'}>
 							LOG IN
 						</ButtonPrimary>
 						{/* </Link> */}

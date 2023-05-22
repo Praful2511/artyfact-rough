@@ -105,6 +105,7 @@ main {
 	background-image: url("../images/backgrounds/AvatarCard.png");
 	background-repeat: no-repeat;
 	height: 403px;
+	width: 266px;
 	&:hover {
 		background-image: url("../images/backgrounds/cardshover.png");
 	}
@@ -134,7 +135,7 @@ main {
 .smallCard {
 	background-image: url("../images/backgrounds/smallCard.png");
 	background-repeat: no-repeat;
-	width: 269px;
+	width: 266px;
 	height: 295px;
 	&:hover {
 		background-image: url("../images/backgrounds/smallcardhover.png");

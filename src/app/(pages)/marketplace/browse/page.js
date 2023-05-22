@@ -139,7 +139,7 @@ export default function BrowserPage() {
 				<div className='font-normal text-xl text-[#B9B9B9]'>FEATURED</div>
 				<div>See All</div>
 			</div>
-			<div className="w-full flex flex-wrap gap-9 mt-6">
+			<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 				{featured.length
 					? featured.map((item, index) => <AvatarCard key={index} data={item} />)
 					: ""}
@@ -150,7 +150,7 @@ export default function BrowserPage() {
 				<div className='font-normal text-xl'>AVATAR</div>
 				<div>See All</div>
 			</div>
-			<div className="w-full flex flex-wrap gap-9 mt-6">
+			<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 				{avatars.length
 					? avatars.map((item, index) => <AvatarCard key={index} data={item} />)
 					: ""}
@@ -161,7 +161,7 @@ export default function BrowserPage() {
 				<div className='font-normal text-xl'>WEAPON SKIN</div>
 				<div>See All</div>
 			</div>
-			<div className="w-full flex flex-wrap gap-9 mt-6">
+			<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 				{weapons.length
 					? weapons.map((item, index) => <SmallCard key={index} data={item} />)
 					: ""}
@@ -172,7 +172,7 @@ export default function BrowserPage() {
 				<div className='font-normal text-xl'>BACKPACK</div>
 				<div>See All</div>
 			</div>
-			<div className="w-full flex flex-wrap gap-9 mt-6">
+			<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 				{backpacks.length
 					? backpacks.map((item, index) => <SmallCard key={index} data={item} />)
 					: ""}

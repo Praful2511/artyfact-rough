@@ -129,7 +129,7 @@ export default function AvatarPage() {
             <div className="font-normal text-xl">AVATAR</div>
             <div>See All</div>
           </div>
-          <div className="w-full flex flex-wrap gap-9 mt-6">
+          <div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
             {avatars.length
               ? avatars.map((item, index) => (
                   <AvatarCard key={index} data={item} />

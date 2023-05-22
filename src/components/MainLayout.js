@@ -15,7 +15,6 @@ const MainLayout = ({ children }) => {
           {/* Redirect or show login/register components */}
         </div>
       )}
-      {/* Additional MainLayout elements */}
     </div>
   );
 };

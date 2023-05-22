@@ -37,15 +37,14 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#a991f7",
-          secondary: "#ff7750",
+          primary: "#161617",
+          secondary: "#00100d",
           accent: "#ff7750",
-          neutral: "#3d4451",
+          neutral: "#161617",
           "base-100": "#ffffff",
         },
       },
       "dark",
-      "cupcake",
     ],
   },
 }

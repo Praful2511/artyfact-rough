@@ -3,8 +3,7 @@ import Navbar from '@/components/Navbar'
 // import './globals.css'
 import '../styles/global.scss'
 import { Inter } from 'next/font/google'
-import { useEffect, useState } from 'react'
-
+import { usePathname } from 'next/navigation';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -13,12 +12,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-	const [path, setPath] = useState(window.location.pathname);
-
-	useEffect(() => {
-		setPath(window.location.pathname)
-	}, [window.location.pathname])
-
+    const pathname = usePathname();
+	// Access the current pathname using router.pathname
 	return (
 		<html lang="en" >
 			<meta charset="UTF-8" />
@@ -26,12 +21,9 @@ export default function RootLayout({ children }) {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 			<body className={inter.className}>
-				{window.location.pathname.includes("signup") || window.location.pathname.includes("login") ?
-					children
-					: <><Navbar />
-						{children}
-					</>
-				}
+				<> {!['/login','/signup'].includes(pathname) ? <Navbar />:null}
+					{children}
+				</>
 			</body>
 		</html>
 	)

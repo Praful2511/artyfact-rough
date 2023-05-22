@@ -4,6 +4,7 @@ import AvatarDropdown from './avatarDropdown';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo_small2 from '@/images/logo_small2.png';
+import { usePathname } from 'next/navigation';
 
 let nav = [
     {
@@ -29,6 +30,9 @@ let nav = [
 ]
 
 const Navbar = () => {
+
+
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);

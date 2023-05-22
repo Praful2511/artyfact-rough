@@ -80,6 +80,18 @@ h6 {
 
 .container {
 	min-height: calc(100vh - 64px);
+	.sticky-bar{
+		position: -webkit-sticky;
+		position: sticky;
+		top: 1px;
+		bottom: 0;
+		z-index: 2;
+		-webkit-align-self: flex-start;
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+		background-color: var(--clr-primary);
+	}
+
 }
 
 nav {

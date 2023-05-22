@@ -93,8 +93,8 @@ export default function WeaponPage() {
 	return (
 		<main>
 			<div className="mx-6 mb-20">
-				<div className='flex justify-between items-center'>
-					<div className='!text-3xl font-normal Starzone text-[#272728]'>WEAPON</div>
+				<div className='flex justify-between items-center sticky-bar'>
+					<div className='!text-3xl font-normal starzone text-[#272728]'>WEAPON</div>
 					<div className="flex gap-5">
 						<div className='relative'>
 							<input type='text'

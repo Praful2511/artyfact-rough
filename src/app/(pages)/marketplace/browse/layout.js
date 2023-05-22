@@ -7,7 +7,7 @@ export const metadata = {
 const BrowseLayout = ({ children }) => {
     return (<>
         <div className="grid grid-cols-12 ">
-            <div className='col-span-2'><MarketplaceSideBar /></div>
+            <div className='col-span-2 sticky top-1 bottom-0 self-start '><MarketplaceSideBar /></div>
             <div className='col-span-10 border-[2px] border-[#161617]'>{children}</div>
         </div>
     </>)

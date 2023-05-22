@@ -23,17 +23,17 @@ const MarketplaceSideBar = (props) => {
             <div className="flex flex-col justify-between items-center h-full w-[50px]">
                 <div className="pt-10">
                     {/* #272728 #F8A932 */}
-                    <div className="mb-4" onClick={() => { setActive('/marketplace/browse/avatar') }}>
+                    <div className="mb-8" onClick={() => { setActive('/marketplace/browse/avatar') }}>
                         <Link href='/marketplace/browse/avatar'>
                             <AvatarIcon fill={`${active != "" && active.includes('avatar') ? '#F8A932' : '#272728'}`} />
                         </Link>
                     </div>
-                    <div className="mb-4" onClick={() => { setActive('/marketplace/browse/weapon') }}>
+                    <div className="mb-8" onClick={() => { setActive('/marketplace/browse/weapon') }}>
                         <Link href='/marketplace/browse/weapon'>
                             <WeaponIcon fill={`${active != "" && active.includes('weapon') ? '#F8A932' : '#272728'}`} />
                         </Link>
                     </div>
-                    <div className="mb-4" onClick={() => { setActive('/marketplace/browse/bagpack') }}>
+                    <div className="mb-8" onClick={() => { setActive('/marketplace/browse/bagpack') }}>
                         <Link href='/marketplace/browse/bagpack'>
                             <BackpackIcon fill={`${active != "" && active.includes('bagpack') ? '#F8A932' : '#272728'}`} />
                         </Link>
@@ -51,10 +51,10 @@ const MarketplaceSideBar = (props) => {
                 </div>
                 <div className="py-2">
                     <ul>
-                        <li>Crypto star 1</li>
-                        <li>Crypto star 2</li>
-                        <li>Crypto star 3</li>
-                        <li>Crypto star 4</li>
+                        <li className="mb-2">Crypto star 1</li>
+                        <li className="mb-2">Crypto star 2</li>
+                        <li className="mb-2">Crypto star 3</li>
+                        <li className="mb-2">Crypto star 4</li>
                     </ul>
                 </div>
             </div>

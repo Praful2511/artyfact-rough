@@ -4,27 +4,32 @@
 @import "daisyui/dist/full.css";
 
 @font-face {
-  font-family: "aldrich";
-  font-weight: 400;
-  font-size: 13px;
-  src: url("../fonts/aldrich/Aldrich-Regular.ttf");
+	font-family: "aldrich";
+	font-weight: 400;
+	font-size: 13px;
+	src: url("../fonts/aldrich/Aldrich-Regular.ttf");
 }
 
 @font-face {
-  font-family: "starzone";
-  font-weight: 400;
-  font-size: 13px;
-  src: url("../fonts/starzone/Starzone.ttf");
+	font-family: "starzone";
+	font-weight: 400;
+	font-size: 13px;
+	src: url("../fonts/starzone/Starzone.ttf");
 }
 
+.Starzone {
+	font-family: "starzone";
+	font-weight: 400;
+	font-size: 13px;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  /* --clr-light: #fdffc4;
+	/* --clr-light: #fdffc4;
   --clr-dark: #00332a;
   --clr-primary: #202302;
   --clr-secondary: #00100d;
@@ -33,35 +38,35 @@
   --foreground: var(--clr-light);
   --background: var(--clr-dark); */
 
-  --clr-light: #fff;
-  --clr-dark: #000;
-  --clr-primary: #202302;
-  --clr-secondary: #00100d;
-  --clr-accent: #ff7750;
-  --clr-primary-gradient: linear-gradient(114.31deg, #ff7246 0.05%, #f8a932 89.74%);
-  --foreground: var(--clr-light);
-  --background: var(--clr-dark);
+	--clr-light: #fff;
+	--clr-dark: #000;
+	--clr-primary: #202302;
+	--clr-secondary: #00100d;
+	--clr-accent: #ff7750;
+	--clr-primary-gradient: linear-gradient(114.31deg, #ff7246 0.05%, #f8a932 89.74%);
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
 
-  --ff-title: "starzone";
-  --ff-body: "Aldrich";
+	--ff-title: "starzone";
+	--ff-body: "Aldrich";
 }
 
 .darkmode {
-  --clr-light: #fdffc4;
-  --clr-dark: #00332a;
-  --clr-primary: #202302;
-  --clr-secondary: #00100d;
-  --clr-accent: #ff7750;
+	--clr-light: #fdffc4;
+	--clr-dark: #00332a;
+	--clr-primary: #202302;
+	--clr-secondary: #00100d;
+	--clr-accent: #ff7750;
 
-  --foreground: var(--clr-light);
-  --background: var(--clr-dark);
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--ff-body) !important;
-  font-size: 16px;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--ff-body) !important;
+	font-size: 16px;
 }
 
 h1,
@@ -70,202 +75,158 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--ff-title);
+	font-family: var(--ff-title);
 }
 
 .container {
-  min-height: calc(100vh - 64px);
+	min-height: calc(100vh - 64px);
 }
 
 nav {
-  @apply px-4 sm:px-6 lg:px-8;
-  font-family: "starzone";
-  .navBorder {
-    background: #161617;
-    &:hover {
-      background: var(--clr-primary-gradient);
-    }
-  }
+	@apply px-4 sm:px-6 lg:px-8;
+	font-family: "starzone";
+	.navBorder {
+		background: #161617;
+		&:hover {
+			background: var(--clr-primary-gradient);
+		}
+	}
 }
 
 main {
-  padding-block: 20px;
+	padding-block: 20px;
 }
 
 .primaryBg {
-  background: var(--clr-primary-gradient);
+	background: var(--clr-primary-gradient);
 }
 
 .avatarCardBg {
-  background-image: url("../images/backgrounds/AvatarCard.png");
-  background-repeat: no-repeat;
-  height: 403px;
-  &:hover {
-    background-image: url("../images/backgrounds/cardshover.png");
-  }
+	background-image: url("../images/backgrounds/AvatarCard.png");
+	background-repeat: no-repeat;
+	height: 403px;
+	&:hover {
+		background-image: url("../images/backgrounds/cardshover.png");
+	}
 }
 
 .bgMonthPass {
-  background-image: url("../images/backgrounds/bgmonth.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/bgmonth.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .bgMonthPassSmall {
-  background-image: url("../images/backgrounds/bgmonthsmall1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/bgmonthsmall1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .bgMonthPasstwo {
-  background-image: url("../images/backgrounds/bgmonthtwo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/bgmonthtwo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .bgMonthPassSmalltwo {
-  background-image: url("../images/backgrounds/bgmonthsamlltwo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/bgmonthsamlltwo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .smallCard {
-  background-image: url("../images/backgrounds/smallCard.png");
-  background-repeat: no-repeat;
-  width: 269px;
-  height: 295px;
-  &:hover {
-    background-image: url("../images/backgrounds/smallcardhover.png");
-  }
+	background-image: url("../images/backgrounds/smallCard.png");
+	background-repeat: no-repeat;
+	width: 269px;
+	height: 295px;
+	&:hover {
+		background-image: url("../images/backgrounds/smallcardhover.png");
+	}
 }
 
 .logoutBg {
-  background: linear-gradient(92.93deg, #931212 0.4%, #dc3c3c 91.28%) !important;
-  border-radius: 13px !important;
-  z-index: 1 !important;
+	background: linear-gradient(92.93deg, #931212 0.4%, #dc3c3c 91.28%) !important;
+	border-radius: 13px !important;
+	z-index: 1 !important;
 }
 /* signup */
 .rotateLogo {
-  animation: rotation 7s linear infinite;
+	animation: rotation 7s linear infinite;
 }
 
 @keyframes rotation {
-  from {
-    transform: rotateY(0deg);
-  }
+	from {
+		transform: rotateY(0deg);
+	}
 
-  to {
-    transform: rotateY(359deg);
-  }
+	to {
+		transform: rotateY(359deg);
+	}
 }
 
 .glow {
-  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25), 0px 0px 8px rgba(255, 255, 255, 0.25), 0px 0px 7px #ffffff;
+	text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25), 0px 0px 8px rgba(255, 255, 255, 0.25), 0px 0px 7px #ffffff;
 }
 
 .signupBtn {
-  background: var(--clr-primary-gradient);
-  height: 36px;
-  display: block;
-  padding-inline: 1rem;
-  padding-block: 0.4rem;
-  border-radius: 13px;
-  cursor: pointer;
+	background: var(--clr-primary-gradient);
+	height: 36px;
+	display: block;
+	padding-inline: 1rem;
+	padding-block: 0.4rem;
+	border-radius: 13px;
+	cursor: pointer;
 }
 
 .signupLeft {
-  background-image: url("../images/icon/signupLeft.png");
-  width: 24px;
-  height: 41px;
-  position: relative;
+	background-image: url("../images/icon/signupLeft.png");
+	width: 24px;
+	height: 41px;
+	position: relative;
 }
 .signupRight {
-  background-image: url("../images/icon/signupRight.png");
-  width: 24px;
-  height: 41px;
-  position: relative;
+	background-image: url("../images/icon/signupRight.png");
+	width: 24px;
+	height: 41px;
+	position: relative;
 }
 
 /* end here */
 .signupBgOne {
-  background-image: url("../images/backgrounds/signup\ card.png");
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/signup\ card.png");
+	background-repeat: no-repeat;
 }
 
-.inputDiv {
-  position: relative;
-  .inputBg {
-    background-image: url("../images/inputBg.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 9px;
-    position: relative;
-  }
-  .inputBgOne {
-    background-image: url("../images/linenews.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 9px;
-    position: relative;
-    top: -4px;
-  }
-
-  .inputDiv input:focus ~ .inputBg,
-  inputDiv input:not(:focus):valid ~ .inputBg {
-    background-image: url("../images/inputBgFocused.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 9px;
-    position: relative;
-  }
-
-  .inputDiv input:focus ~ .labelFloat,
-  .inputDiv input:not(:focus):valid ~ .labelFloat {
-    font-size: 12px;
-    position: absolute;
-    pointer-events: none;
-    top: -18px;
-    transition: 0.2s ease all;
-    color: #8b8b8b;
-  }
-}
-
-.labelFloat {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  pointer-events: none;
-  top: 0px;
-  .labelFloat:focus {
-    top: -10px;
-  }
+.walletDiscordSignup {
+	background-image: url("../images/backgrounds/commoncard.png");
+	background-repeat: no-repeat;
 }
 
 .signupBack {
-  background: #bcbcbd;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  &:hover {
-    background: var(--clr-primary-gradient);
-  }
-}
-
-.signupBack {
-  color: #bcbcbd;
-  &:hover {
-    color: #ff7246;
-  }
+	background: #bcbcbd;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+	&:hover {
+		background: linear-gradient(114.31deg, #ff7246 0.05%, #f8a932 89.74%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
 }
 
 .signupBgImage {
-  background-image: url("../images/backgrounds/signupBg2.png");
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/signupBg2.png");
+	background-repeat: no-repeat;
+	height: 900px;
 }
+
 .loginBgImage {
-  background-image: url("../images/backgrounds/loginBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url("../images/backgrounds/loginBg.png");
+	background-repeat: no-repeat;
+	height: 900px;
 }
+
 .loginBg {
-  background-image: url("../images/backgrounds/login\ card.png");
-  background-repeat: no-repeat;
+	background-image: url("../images/backgrounds/login\ card.png");
+	background-repeat: no-repeat;
 }

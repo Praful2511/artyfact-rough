@@ -1,18 +1,14 @@
 'use client'
 import { useState } from "react";
-import discord from "../../../images/icon/discord1.png";
-import wallet from "../../../images/icon//wallet.png";
-import leftarrow from "../../../images/icon/leftarrow.png";
-import checkboxChecked from "../../../images/icon//checkboxChecked.png";
-import checkbox from "../../../images/icon/checkbox.png";
-import signupLeft from "../../../images/signupLeft.png";
-import signupRight from "../../../images/signupRight.png";
+import checkboxChecked from "@/images/icon/checkboxChecked.svg";
+import checkbox from "@/images/icon/checkbox.svg";
+import signupLeft from "@/images/signupLeft.png";
+import signupRight from "@/images/signupRight.png";
 import onboardLogo from "@/images/onboardLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonPrimary from "@/components/buttons/buttonPrimary/ButtonPrimary";
 import InvertButton from "@/components/buttons/invertButton/InvertButton";
-import Input from "@/components/common/input";
 import FloatingLabelInput from "@/components/common/floatingLabelInput";
 
 const page = () => {
@@ -37,9 +33,9 @@ const page = () => {
 					<div className="flex absolute"
 						style={{ zIndex: 2 }}
 					>
-						<ButtonPrimary
+						<button
 							onClick={() => { window.location.replace('/') }}
-							className={' h-6  pl-0 pr-0 rounded-none !bg-transparent border-0'}
+							className={' h-6 flex gap-2 px-3 py-2 items-center signupBack border-0'}
 							onMouseEnter={() => { setHoverBack('#ff7246') }}
 							onMouseLeave={() => { setHoverBack('#BCBCBD') }}
 						>
@@ -47,7 +43,7 @@ const page = () => {
 								<path d="M16 9C16.5523 9 17 8.55228 17 8C17 7.44772 16.5523 7 16 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM16 7L0.999999 7V9L16 9V7Z" fill={hoverBack} />
 							</svg>
 							BACK TO ARTYFACT
-						</ButtonPrimary>
+						</button>
 						<Image src={onboardLogo} alt='onboardLogo' className='ml-36 mt-3' />
 					</div>
 					<div className="absolute top-0">
@@ -65,13 +61,13 @@ const page = () => {
 				>
 					<div className="Starzone flex h-14 items-center ml-[136px] gap-[25px] ">
 						<div className="primaryBg rounded-2xl p-[2px]">
-							<div className="!text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
+							<div className="text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
 								SIGN UP
 							</div>
 						</div>
 
 						<Link href={"/login"}>
-							<div className="text-[#8B8B8B] !text-base launchSelectTabTwo px-4 py-2">
+							<div className="text-[#8B8B8B] text-base border-2 border-[#272728] rounded-2xl px-4 py-2">
 								LOG IN
 							</div>
 						</Link>
@@ -174,7 +170,7 @@ const page = () => {
 							</p>
 						</div>
 
-						<ButtonPrimary className={'Starzone mt-8 primaryBg font-normal text-base py-1 w-full'}>
+						<ButtonPrimary className={'Starzone mt-8 primaryBg font-normal !text-base py-1 w-full'}>
 							SIGNUP
 						</ButtonPrimary>
 					</div>

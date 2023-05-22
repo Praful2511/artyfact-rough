@@ -1,10 +1,7 @@
 'use client'
 import { useState } from "react";
-import discord from "../../../images/icon/discord1.png";
-import wallet from "../../../images/icon//wallet.png";
-import leftarrow from "../../../images/icon/leftarrow.png";
-import checkboxChecked from "../../../images/icon//checkboxChecked.png";
-import checkbox from "../../../images/icon/checkbox.png";
+import checkboxChecked from "@/images/icon/checkboxChecked.svg";
+import checkbox from "@/images/icon/checkbox.svg";
 import loginLeft from "../../../images/loginLeft.png";
 import loginRight from "../../..//images/loginRight.png";
 import onboardLogo from "@/images/onboardLogo.png";
@@ -33,9 +30,9 @@ const page = () => {
 					<div className="flex absolute"
 						style={{ zIndex: 2 }}
 					>
-						<ButtonPrimary
+						<button
 							onClick={() => { window.location.replace('/') }}
-							className={' h-6 signupBack pl-0 pr-0 rounded-none border-0'}
+							className={' h-6 flex gap-2 px-3 py-2 items-center signupBack border-0'}
 							onMouseEnter={() => { setHoverBack('#ff7246') }}
 							onMouseLeave={() => { setHoverBack('#BCBCBD') }}
 						>
@@ -43,7 +40,7 @@ const page = () => {
 								<path d="M16 9C16.5523 9 17 8.55228 17 8C17 7.44772 16.5523 7 16 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM16 7L0.999999 7V9L16 9V7Z" fill={hoverBack} />
 							</svg>
 							BACK TO ARTYFACT
-						</ButtonPrimary>
+						</button>
 						<Image src={onboardLogo} alt='onboardLogo' className='ml-36 mt-3' />
 					</div>
 					<div className="absolute top-0">
@@ -61,13 +58,13 @@ const page = () => {
 				>
 					<div className=" flex h-14 items-center ml-[136px] gap-[25px] ">
 						<Link href={"/signup"}>
-							<div className=" text-[#8B8B8B] !text-base launchSelectTabTwo px-4 py-2">
+							<div className=" text-[#8B8B8B] text-base border-2 border-[#272728] rounded-2xl px-4 py-2">
 								SIGN UP
 							</div>
 						</Link>
 
 						<div className="primaryBg rounded-2xl p-[2px]">
-							<div className="!text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
+							<div className="text-base text-white bg-[#0b0c0c] rounded-2xl px-4 py-2">
 								LOG IN
 							</div>
 						</div>
@@ -107,8 +104,8 @@ const page = () => {
 							type="password"
 						/>
 
-						<div className="flex gap-4 items-start mt-8">
-							<div className="flex justify-between w-full">
+						<div className="flex gap-4 justify-between mt-8">
+							<div className="flex gap-3 items-center">
 								{agree ? (
 									<Image
 										src={checkboxChecked}
@@ -127,8 +124,9 @@ const page = () => {
 									/>
 								)}
 								<p className="text-[#8B8B8B]">Remember Me</p>
-								<p className="text-[#F3BA2F]">Forgot Password?</p>
 							</div>
+
+							<p className="text-[#F3BA2F]">Forgot Password?</p>
 						</div>
 						{/*  <Link href={`/`}> */}
 						<ButtonPrimary className={'primaryBg  mt-8 font-normal text-base py-1 w-full'}>

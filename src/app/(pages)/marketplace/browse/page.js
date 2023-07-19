@@ -148,8 +148,9 @@ export default function BrowserPage() {
 			</div>
 			<div className=' mt-8'>
 				<div className='flex justify-between'>
-					<div className='font-normal text-xl'>AVATAR</div>
-					<div>See All</div>
+					<div className='font-normal text-xl border-b-2 border-b-[#161617] w-[80%] '>AVATAR</div>
+					<div className='w-[5%] border-b-2 border-b-[#161617] rotop h-[1.3rem] -ml-[3rem] '></div>
+					<div className='border-t-2 border-t-[#161617]  w-[17%] text-end -ml-[3rem] ' style={{borderTopLeftRadius:"30px"}}>See All</div>
 				</div>
 				<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 					{avatars.length
@@ -162,6 +163,7 @@ export default function BrowserPage() {
 					<div className='font-normal text-xl'>WEAPON SKIN</div>
 					<div>See All</div>
 				</div>
+				
 				<div className="w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mt-6">
 					{weapons.length
 						? weapons.map((item, index) => <SmallCard key={index} data={item} />)
@@ -178,7 +180,11 @@ export default function BrowserPage() {
 						? backpacks.map((item, index) => <SmallCard key={index} data={item} />)
 						: ""}
 				</div>
+		
+
 			</div>
 		</div>
+
+
 	</main>
 }
